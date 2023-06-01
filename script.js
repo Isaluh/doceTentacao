@@ -305,8 +305,8 @@ function valores(){
         if(i == 0) {
             if(receitas[0] > 0){
                 r.innerHTML = `- Bombom de leite ninho: <br>
-            &nbsp;&nbsp;&nbsp;Cada um terá que custar mais que ${valorDoce[i]}<br> reais para obter lucro. <br>
-            &nbsp;&nbsp;&nbsp;Custo da receita: R$${ValorSoma[i]}`
+            &nbsp;&nbsp;&nbsp;Cada um terá que custar mais que ${valorDoce[i].toFixed(2)}<br> reais para obter lucro. <br>
+            &nbsp;&nbsp;&nbsp;Custo da receita: R$${ValorSoma[i].toFixed(2)}`
             }
             else{
                 r.innerHTML = `- Bombom de leite ninho: <br>
@@ -316,8 +316,8 @@ function valores(){
         if(i == 1){
             if(receitas[1] > 0){
                 r.innerHTML = `- Bombom de coco (beijinho): <br>
-            &nbsp;&nbsp;&nbsp;Cada um terá que custar mais que ${valorDoce[i]}<br> reais para obter lucro. <br>
-            &nbsp;&nbsp;&nbsp;Custo da receita: R$${ValorSoma[i]}`
+            &nbsp;&nbsp;&nbsp;Cada um terá que custar mais que ${valorDoce[i].toFixed(2)}<br> reais para obter lucro. <br>
+            &nbsp;&nbsp;&nbsp;Custo da receita: R$${ValorSoma[i].toFixed(2)}`
             }
             else{
                 r.innerHTML = `- Bombom de coco (beijinho): <br>
@@ -327,8 +327,8 @@ function valores(){
         if(i == 2){
             if(receitas[2] > 0){
                 r.innerHTML = `- Bombom de café: <br>
-            &nbsp;&nbsp;&nbsp;Cada um terá que custar mais que ${valorDoce[i]}<br> reais para obter lucro. <br>
-            &nbsp;&nbsp;&nbsp;Custo da receita: R$${ValorSoma[i]}`
+            &nbsp;&nbsp;&nbsp;Cada um terá que custar mais que ${valorDoce[i].toFixed(2)}<br> reais para obter lucro. <br>
+            &nbsp;&nbsp;&nbsp;Custo da receita: R$${ValorSoma[i].toFixed(2)}`
             }
             else{
                 r.innerHTML = `- Bombom de café: <br>
