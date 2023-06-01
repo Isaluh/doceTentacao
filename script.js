@@ -52,6 +52,7 @@ var listaCUnit = [0, 0, 0, 0, 0, 0];
 var receitas = [0, 0, 0];
 var valorIdeal = [400, 395, 40, 50, 100, 300];
 var valorDoce = [0, 0, 0];
+var ValorSoma = [0, 0, 0];
 var soma = 0;
 var lucro = [];
 
@@ -182,6 +183,7 @@ function valores(){
                 if(listaQuant[i] > 0){
                     while(listaPeso[i] >= valorIdeal[i] && listaPeso[0] >= valorIdeal[0] && listaPeso[1] >= valorIdeal[1] && listaPeso[2] >= valorIdeal[2]){
                         soma = soma + listaCUnit[i];
+                        ValorSoma[0] = soma; 
                         valorDoce[0] = soma / 50;
                         if (soma > 60) {
                             soma = soma - listaCUnit[i];
@@ -202,6 +204,7 @@ function valores(){
                 if (listaQuant[i] > 0) {
                     while (listaPeso[i] >= valorIdeal[i] && listaPeso[0] >= valorIdeal[0] && listaPeso[1] >= valorIdeal[1] && listaPeso[2] >= valorIdeal[2]) {
                         soma = soma + listaCUnit[i];
+                        ValorSoma[1] = soma; 
                         valorDoce[1] = soma / 50;
                         if (soma > 60) {
                             soma = soma - listaCUnit[i];
@@ -222,8 +225,8 @@ function valores(){
                 if (listaQuant[i] > 0) {
                     while (listaPeso[i] >= valorIdeal[i] && listaPeso[0] >= valorIdeal[0] && listaPeso[1] >= valorIdeal[1] && listaPeso[2] >= valorIdeal[2]) {
                         soma = soma + listaCUnit[i];
+                        ValorSoma[2] = soma; 
                         valorDoce[2] = soma / 50;
-                        console.log(soma, listaCUnit[i], "soma")
                         if (soma > 60) {
                             soma = soma - listaCUnit[i];
                             break;
@@ -299,11 +302,11 @@ function valores(){
 
     pr.forEach((r) =>{
         parseFloat(valorDoce[i]);
-        console.log(valorDoce[i], receitas[i]);
         if(i == 0) {
             if(receitas[0] > 0){
                 r.innerHTML = `- Bombom de leite ninho: <br>
-            &nbsp;&nbsp;&nbsp;Cada um terá que custar mais que ${valorDoce[i]}<br> reais para obter lucro.`
+            &nbsp;&nbsp;&nbsp;Cada um terá que custar mais que ${valorDoce[i]}<br> reais para obter lucro. <br>
+            &nbsp;&nbsp;&nbsp;Custo da receita: R$${ValorSoma[i]}`
             }
             else{
                 r.innerHTML = `- Bombom de leite ninho: <br>
@@ -313,7 +316,8 @@ function valores(){
         if(i == 1){
             if(receitas[1] > 0){
                 r.innerHTML = `- Bombom de coco (beijinho): <br>
-            &nbsp;&nbsp;&nbsp;Cada um terá que custar mais que ${valorDoce[i]}<br> reais para obter lucro.`
+            &nbsp;&nbsp;&nbsp;Cada um terá que custar mais que ${valorDoce[i]}<br> reais para obter lucro. <br>
+            &nbsp;&nbsp;&nbsp;Custo da receita: R$${ValorSoma[i]}`
             }
             else{
                 r.innerHTML = `- Bombom de coco (beijinho): <br>
@@ -323,7 +327,8 @@ function valores(){
         if(i == 2){
             if(receitas[2] > 0){
                 r.innerHTML = `- Bombom de café: <br>
-            &nbsp;&nbsp;&nbsp;Cada um terá que custar mais que ${valorDoce[i]}<br> reais para obter lucro.`
+            &nbsp;&nbsp;&nbsp;Cada um terá que custar mais que ${valorDoce[i]}<br> reais para obter lucro. <br>
+            &nbsp;&nbsp;&nbsp;Custo da receita: R$${ValorSoma[i]}`
             }
             else{
                 r.innerHTML = `- Bombom de café: <br>
@@ -340,6 +345,7 @@ function valores(){
     listaCUnit = [0, 0, 0, 0, 0, 0];
     receitas = [0, 0, 0];
     valorDoce = [0, 0, 0];
+    ValorSoma = [0, 0, 0];
 }
 
 function calculoLucro() {
@@ -357,7 +363,6 @@ function calculoLucro() {
     }
     else {
         lucro[3] = (lucro[0] * lucro[1]) - lucro[2];
-        console.log(lucro[3]);
         vr.setAttribute("value", `R$${lucro[3].toFixed(2)}`)
     }
 
