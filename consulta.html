@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Doce Tentação</title>
+</head>
+<body>
+    <header>
+        <img src="https://cdn.discordapp.com/emojis/783206894046543912.webp?size=96&quality=lossless" alt="traco" width="40px"
+            height="40px">
+        <img src="https://cdn.discordapp.com/emojis/783206894046543912.webp?size=96&quality=lossless" alt="traco" width="40px"
+            height="40px">
+        <img src="https://cdn.discordapp.com/emojis/783206894046543912.webp?size=96&quality=lossless" alt="traco" width="40px"
+            height="40px">
+        <img src="./assets/logo.png" alt="Logo" width="90px" height="80px">
+        <img src="https://cdn.discordapp.com/emojis/783206894046543912.webp?size=96&quality=lossless" alt="traco" width="40px"
+            height="40px">
+        <img src="https://cdn.discordapp.com/emojis/783206894046543912.webp?size=96&quality=lossless" alt="traco" width="40px"
+            height="40px">
+        <img src="https://cdn.discordapp.com/emojis/783206894046543912.webp?size=96&quality=lossless" alt="traco" width="40px"
+            height="40px">
+    </header>
+    <div class="divider"></div>
+    <nav>
+        <a href="consulta.html"><strong>Consulta</strong></a>
+        <a href="lucro.html"><strong>Lucro</strong></a>
+    </nav>
+    <div class="divider"></div>
+
+    <div class="consulta">
+        <div>
+            <ul>
+                <li>
+                    <span>
+                        <img src="https://cdn.discordapp.com/emojis/752932176609411132.webp?size=96&quality=lossless" alt="docin"
+                            height="18" width="18">
+                    </span>
+                    <strong class="valoresmodi">400g</strong> - Chocolate fracionado meio amargo
+                </li>
+                <li>
+                    <span>
+                        <img src="https://cdn.discordapp.com/emojis/752932176609411132.webp?size=96&quality=lossless" alt="docin"
+                            height="18" width="18">
+                    </span>
+                    <strong class="valoresmodi">395g</strong> - Leite condensado
+                </li>
+                <li>
+                    <span>
+                        <img src="https://cdn.discordapp.com/emojis/752932176609411132.webp?size=96&quality=lossless" alt="docin"
+                            height="18" width="18">
+                    </span>
+                    <strong class="valoresmodi">40g</strong> - Margarina
+                </li>
+                <li>
+                    <span>
+                        <img src="https://cdn.discordapp.com/emojis/752932176609411132.webp?size=96&quality=lossless" alt="docin"
+                            height="18" width="18">
+                    </span>
+                    <strong class="valoresmodi">50g</strong> - Leite em pó
+                </li>
+                <li>
+                    <span>
+                        <img src="https://cdn.discordapp.com/emojis/752932176609411132.webp?size=96&quality=lossless" alt="docin"
+                            height="18" width="18">
+                    </span>
+                    <strong class="valoresmodi">100g</strong> - Café solúvel
+                </li>
+                <li>
+                    <span>
+                        <img src="https://cdn.discordapp.com/emojis/752932176609411132.webp?size=96&quality=lossless" alt="docin"
+                            height="18" width="18">
+                    </span>
+                    <strong class="valoresmodi">300g</strong> - Coco ralado seco
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <div class="tabela">
+                <div>
+                    <div>
+                        Quantidade
+                    </div>
+                    <div>
+                        <input type="number" value="" class="quantidade">
+                        <input type="number" value="" class="quantidade">
+                        <input type="number" value="" class="quantidade">
+                        <input type="number" value="" class="quantidade">
+                        <input type="number" value="" class="quantidade">
+                        <input type="number" value="" class="quantidade">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Peso Unitário
+                    </div>
+                    <div class="conversor">
+                        <div>
+                            <div>
+                                <input type="number" value="" class="peso">
+                                <input type="number" value="" class="peso">
+                                <input type="number" value="" class="peso">
+                                <input type="number" value="" class="peso">
+                                <input type="number" value="" class="peso">
+                                <input type="number" value="" class="peso">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input list="conversor" class="conversor">
+                                <input list="conversor" class="conversor">
+                                <input list="conversor" class="conversor">
+                                <input list="conversor" class="conversor">
+                                <input list="conversor" class="conversor">
+                                <input list="conversor" class="conversor">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Custo Total
+                    </div>
+                    <div>
+                        <input type="number" value="" class="custo">
+                        <input type="number" value="" class="custo">
+                        <input type="number" value="" class="custo">
+                        <input type="number" value="" class="custo">
+                        <input type="number" value="" class="custo">
+                        <input type="number" value="" class="custo">
+                    </div>
+            
+                </div>
+            </div>
+            <div class="btns">
+                <button class="btn" id="primeiro" type="submit">Mostrar resultado</button>
+                <button class="btn" id="segundo">Modificar valores</button>
+            
+            </div>
+        </div>
+        <datalist id="conversor">
+            <option value="Kg"></option>
+            <option value="g"></option>
+        </datalist>
+    </div>
+
+    <div class="divider" id="resul" hidden></div>
+
+    <div id="btnresul" hidden>
+        <div class="resultado">
+            <h1><strong>RESULTADO</strong></h1>
+            <div class="tabelaresul">
+                <div>
+                    <h2>Peso no estoque</h2>
+                    <ul>
+                        <li class="resto">
+                            <span>
+                                <img src="https://cdn.discordapp.com/emojis/1065829923320774676.webp?size=96&quality=lossless"
+                                    alt="docin" height="18" width="18">
+                            </span>
+                            Chocolate fracionado meio amargo: 0g
+                        </li>
+                        <li class="resto">
+                            <span>
+                                <img src="https://cdn.discordapp.com/emojis/1065829923320774676.webp?size=96&quality=lossless"
+                                    alt="docin" height="18" width="18">
+                            </span>
+                            Leite condensado: 0g
+                        </li>
+                        <li class="resto">
+                            <span>
+                                <img src="https://cdn.discordapp.com/emojis/1065829923320774676.webp?size=96&quality=lossless"
+                                    alt="docin" height="18" width="18">
+                            </span>
+                            Margarina: 0g
+                        </li>
+                        <li class="resto">
+                            <span>
+                                <img src="https://cdn.discordapp.com/emojis/1065829923320774676.webp?size=96&quality=lossless"
+                                    alt="docin" height="18" width="18">
+                            </span>
+                            Leite em pó: 0g
+                        </li>
+                        <li class="resto">
+                            <span>
+                                <img src="https://cdn.discordapp.com/emojis/1065829923320774676.webp?size=96&quality=lossless"
+                                    alt="docin" height="18" width="18">
+                            </span>
+                            Café solúvel: 0g
+                        </li>
+                        <li class="resto">
+                            <span>
+                                <img src="https://cdn.discordapp.com/emojis/1065829923320774676.webp?size=96&quality=lossless"
+                                    alt="docin" height="18" width="18">
+                            </span>
+                            Coco ralado seco: 0g
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Quantidade de Bandejas</h2>
+                    <div>
+                        <p class="receitas">[] Bandeja(s) de Bombom de leite ninho</p>
+                        <p class="receitas">[] Bandeja(s) de Bombom de coco (beijinho)</p>
+                        <p class="receitas">[] Bandeja(s) de Bombom de café</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Valor por unidade</h2>
+                    <div>
+                        <p class="resulucro">- Bombom de leite ninho: <br>
+                            &nbsp;&nbsp;&nbsp;Cada um custará 5 reais</p>
+                        <p class="resulucro">- Bombom de coco (beijinho) <br>
+                            &nbsp;&nbsp;&nbsp;Cada um custará 3 reais</p>
+                        <p class="resulucro">- Bombom de café <br>
+                            &nbsp;&nbsp;&nbsp;Cada um custará 4 reais</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="escurecer" id="escurecer" hidden></div>
+    <div class="modificar" id="modificar" hidden>
+        <div class="fundomodificar">
+            <div class="moditotal">
+                <div>
+                    <div>
+                        <h2>Ingredientes</h2>
+                        <ul>
+                            <li>
+                                Chocolate fracionado meio amargo:
+                            </li>
+                            <li>
+                                Leite condensado:
+                            </li>
+                            <li>
+                                Margarina:
+                            </li>
+                            <li>
+                                Leite em pó:
+                            </li>
+                            <li>
+                                Café solúvel:
+                            </li>
+                            <li>
+                                Coco ralado seco:
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="novovalor">
+                        <h2>Novo valor (g)</h2>
+                        <div class="valorespeso">
+                            <input type="number" value="" class="modi">
+                            <input type="number" value="" class="modi">
+                            <input type="number" value="" class="modi">
+                            <input type="number" value="" class="modi">
+                            <input type="number" value="" class="modi">
+                            <input type="number" value="" class="modi">
+                        </div>
+                    </div>
+                </div>
+                <div class="btnsdois">
+                    <button class="btn" id="terceiro">Cancelar</button>
+                    <button class="btn" id="quarto">Modificar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

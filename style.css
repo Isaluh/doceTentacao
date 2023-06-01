@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --rosa: #F489A8;
+    --marrom: rgb(107, 39, 0);
+    --fundonav: rgb(247, 247, 247);
+    --fundobody: #ffe1ea;
+    --braco: white;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(107, 39, 0);
+    border-radius: 5px;
+}
+
+body{
+    background-color: var(--fundobody);
+}
+
+header{
+    width: auto;
+    height: 80px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: var(--rosa);
+}
+
+.divider{
+    height: 1.5px;
+    background-color: var(--marrom);
+}
+
+nav{
+    background-color: var(--fundonav);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--marrom);
+    font-size: 24px;
+}
+a:nth-child(1){
+    margin-left: 85px;
+}
+a:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.consulta{
+    display: grid;
+    grid-template-areas: "ingredientes valores";
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 84vh;
+}
+.consulta>div:nth-child(1){
+    grid-area: ingredientes;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.consulta>div:nth-child(2){
+    grid-area: valores;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 80px 85px 0px;
+}
+
+ul li {
+    color: var(--marrom);
+    font-size: 20px;
+
+    list-style-type: none;
+    margin-bottom: 24px
+}
+
+.tabela{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    padding: 17px;
+    border: 2px solid rgb(107, 39, 0);
+    border-radius: 5px;
+
+    background-color: var(--rosa);
+    color: var(--braco);
+}
+.tabela div:nth-child(1), 
+.tabela>div:nth-child(2),
+.tabela div:nth-child(2),
+.tabela>div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+
+    font-size: 20px;
+}
+.tabela div div.conversor{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+input{
+    width: 150px;
+    height: 23px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+input.conversor{
+    width: 39px;
+    height: 23px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
+}
+
+button{
+    height: 50px;
+    width: 180px;
+    font-size: 20px;
+    padding: 10px;
+
+    border-radius: 10px;
+    border-style: none;
+    color: var(--braco);
+    background-color: var(--rosa);
+    border: 2px solid var(--marrom);
+}
+button:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.resultado{
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--marrom);
+}
+
+.tabelaresul{
+    margin-top: 50px;
+    width: 100%;
+    font-size: 20px;
+
+    display: grid;
+    grid-template-areas: "peso receita valor";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 74vh;
+}
+.tabelaresul>div:nth-child(1){
+    grid-area: peso;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tabelaresul>div:nth-child(2) {
+    grid-area: receita;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.tabelaresul>div:nth-child(3) {
+    grid-area: valor;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+p{
+    padding-bottom: 15px;
+}
+
+.escurecer{
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.fundomodificar{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.fundomodificar ul li {
+    margin-bottom: -10px;
+    margin-top: 47px;
+    font-size: 17px;
+} 
+
+.moditotal{
+    width: 50%;
+    height: 80%;
+
+    background-color: var(--braco);
+    color: var(--marrom);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.moditotal>div:nth-child(1){
+    width: 100%;
+    padding: 50px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.moditotal>div>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.moditotal>div>div:nth-child(2) div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+}
+
+input.modi{
+    width: 45px;
+    height: 35px;
+    border: 2px solid rgb(107, 39, 0);
+}
+
+.btnsdois{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.btnsdois button{
+    width: 142px;
+
+    border: none;
+    background-color: var(--marrom);
+}
+
+.lucro{
+    display: grid;
+    grid-template-areas: "inserir saida";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh;
+}
+
+.inserir{
+    grid-area: inserir;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+    border-right: 1px solid var(--marrom);
+}
+.inserir div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.inserir div div button{
+    width: 142px;
+}
+
+.saida{
+    grid-area: saida;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+input:disabled {
+    background-color: white;
+}
