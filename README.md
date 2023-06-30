@@ -27,6 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 📔 Projeto
 
 Calculadora de lucro de doces para empreendedores.
+Obs: Não responsivo. Resolução: 1366 x 768.
 
 - [Visite o projeto online](https://isaluh.github.io/doceTentacao/consulta.html)
 
