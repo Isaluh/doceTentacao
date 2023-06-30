@@ -7,7 +7,7 @@ Projeto feito para um trabalho da faculdade que consiste em criar uma calculador
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>
+  <a href="#-proposta">Proposta</a>
 </p>
 
 <br>
